@@ -12,7 +12,7 @@ export default function OriginsPage() {
       <PageIntro
         label="Our origins"
         title="Rooted in origin. Driven by purpose."
-        copy="Kaobak works directly with farmer groups, producer communities, and forest-linked sourcing regions across Northeast India."
+        copy="Kaobak exists to celebrate the extraordinary landscapes and communities of Northeast India. Every bean, every drop of honey, and every spice carries the patience of nature, the dedication of its growers, and the story of its place."
       />
       <section className="container-luxury section-y grid gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
         <Reveal>
@@ -22,6 +22,12 @@ export default function OriginsPage() {
         </Reveal>
         <Reveal delay={0.1}>
           <div className="rounded-sm border border-border bg-card p-8 md:p-12">
+            <p className="body-luxury mb-8">
+              At Kaobak, customers deserve to know more than just what they are
+              buying. They deserve to know who grew it, where it came from, how
+              it was harvested, why it tastes different, and how their purchase
+              creates impact.
+            </p>
             <IndiaSourcingMap />
             <div className="mt-8 grid gap-4">
               {originRegions.map((region) => (

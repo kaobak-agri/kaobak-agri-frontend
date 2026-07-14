@@ -144,8 +144,10 @@ export default function Home() {
               Commerce cards with origin built in.
             </h2>
             <p className="body-luxury mt-6">
-              Each product preview keeps the image, label, price, story cue,
-              and route to product details inside one polished card.
+              Our products are more than ingredients - they are journeys. Each
+              card brings together product imagery, transparent pricing, region
+              of origin, harvest information, producer story, and direct access
+              to traceability.
             </p>
             <Button asChild className="mt-8" variant="outline">
               <Link href="/shop">Shop all products</Link>
@@ -167,8 +169,9 @@ export default function Home() {
             <p className="kicker">Our origins</p>
             <h2 className="headline-lg mt-4">Rooted in place. Designed for proof.</h2>
             <p className="body-luxury mt-6">
-              Homepage previews stay concise; the deeper sourcing philosophy,
-              village stories, and production journey live inside Our Origins.
+              Exceptional products begin in mountain villages, forest
+              communities, and family farms where generations have perfected
+              the art of growing with nature rather than against it.
             </p>
             <Button asChild className="mt-8" variant="outline">
               <Link href="/origins">Explore origins</Link>
@@ -208,8 +211,10 @@ export default function Home() {
             </Reveal>
             <Reveal delay={0.1}>
               <p className="body-luxury">
-                Animated metric cards preview the impact story: farmers,
-                villages, women-led activity, and traceable lots.
+                True impact is measured by people, not numbers alone. Every
+                jar of honey, pack of spices, and bag of coffee represents
+                indigenous communities, farmer collectives, and women-led
+                enterprises across Northeast India.
               </p>
             </Reveal>
           </div>
@@ -296,6 +301,10 @@ export default function Home() {
               <h2 className="mt-5 font-display text-4xl leading-none">
                 Real change. Real people. Real stories.
               </h2>
+              <p className="body-luxury mt-6">
+                Behind every harvest is a person, a place, and a decision to
+                keep value closer to the community that creates it.
+              </p>
               <div className="mt-8 grid grid-cols-2 gap-3 md:gap-4">
                 {[
                   "Women-led producer groups",

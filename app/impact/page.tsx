@@ -10,7 +10,7 @@ export default function ImpactPage() {
       <PageIntro
         label="Impact"
         title="Impact that goes beyond commerce."
-        copy="Better livelihoods, stronger communities, healthier forests, and more transparent trade relationships."
+        copy="Every purchase contributes to something larger than itself: stronger rural livelihoods, sustainable farming, women-led enterprises, and protection for some of India's richest natural landscapes."
       />
       <section className="container-luxury section-y">
         <StatRow />
@@ -18,7 +18,13 @@ export default function ImpactPage() {
       <section className="bg-secondary">
         <div className="container-luxury grid gap-12 py-20 lg:grid-cols-2 lg:items-center">
           <Reveal>
-            <h2 className="headline-lg">Real change needs a patient operating system.</h2>
+            <h2 className="headline-lg">Protecting nature while celebrating it.</h2>
+            <p className="body-luxury mt-6">
+              Exceptional products can only exist within healthy ecosystems. Our
+              sourcing supports responsible farming, ethical forest harvesting,
+              biodiversity conservation, and transparent supply chains that
+              respect both people and the environment.
+            </p>
             <div className="mt-10 grid gap-5">
               {impactInitiatives.map((item) => {
                 const Icon = item.icon;

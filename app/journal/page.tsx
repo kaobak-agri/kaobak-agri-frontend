@@ -11,7 +11,7 @@ export default function JournalPage() {
       <PageIntro
         label="Journal"
         title="Stories from the highlands."
-        copy="Brewing guides, spice recipes, farmer interviews, honey harvesting stories, and sustainability field notes."
+        copy="Behind every harvest lies a remarkable story. Explore brewing techniques, regional recipes, farmer conversations, sustainable harvesting practices, and field journals that celebrate the people and landscapes behind every Kaobak product."
       />
       <section className="container-luxury section-y">
         <div className="grid gap-8 md:grid-cols-3 md:gap-5">

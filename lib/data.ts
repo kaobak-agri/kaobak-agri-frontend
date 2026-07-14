@@ -26,7 +26,7 @@ export const contact = {
   ],
   phone: "9401214331",
   mapUrl: "https://maps.app.goo.gl/RVQewLNzgXw4SpLX7?g_st=ic",
-  email: "hello@kaobak.com"
+  email: "info@kaobakagri.com"
 };
 
 export const navigation = [
@@ -549,22 +549,22 @@ export const impactMetrics = [
 export const pillars: Array<{ title: string; text: string; icon: LucideIcon }> = [
   {
     title: "Single origin traceable",
-    text: "Batch proof from village to pack.",
+    text: "Batch proof from village to pack, so every product can be traced back to its place.",
     icon: MapPin
   },
   {
     title: "Forest and farm sourced",
-    text: "Protecting forests while growing livelihoods.",
+    text: "Protecting forests while growing livelihoods through responsible sourcing.",
     icon: Trees
   },
   {
     title: "Women-led enterprise",
-    text: "Local women leading resilient producer groups.",
+    text: "Local women leading resilient producer groups, sorting, packing, and trade readiness.",
     icon: Users
   },
   {
     title: "Export-grade quality",
-    text: "Graded lots ready for global buyers.",
+    text: "Graded lots prepared for global buyers, private label programs, and premium retail.",
     icon: PackageCheck
   }
 ];
@@ -603,21 +603,21 @@ export const journalPosts = [
     title: "Brewing highland coffee without masking origin",
     category: "Coffee",
     image: "/images/coffee.png",
-    excerpt: "A slow, clean brewing guide for preserving sweetness and origin clarity."
+    excerpt: "A slow, clean brewing guide for preserving sweetness, clarity, and the character of its mountain origin."
   },
   {
     slug: "forest-honey-cycles",
     title: "How wild honey changes with forest bloom cycles",
     category: "Honey",
     image: "/images/honey.png",
-    excerpt: "A seasonal look at texture, color, aroma, and conservation-linked harvests."
+    excerpt: "A seasonal look at texture, color, aroma, sustainable harvesting practices, and conservation-linked forest bloom cycles."
   },
   {
     slug: "spice-pantry",
     title: "Cooking with turmeric, ginger, and black pepper",
     category: "Recipes",
     image: "/images/spices.png",
-    excerpt: "A chef-led approach to building warmth, depth, and wellness into daily food."
+    excerpt: "Regional recipes and field notes for building warmth, depth, and wellness into daily food."
   }
 ];
 

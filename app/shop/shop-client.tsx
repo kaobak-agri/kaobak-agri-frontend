@@ -48,8 +48,8 @@ export function ShopClient() {
     <main>
       <PageIntro
         label="Shop"
-        title="Shop all products."
-        copy="Pure. Authentic. Responsibly sourced. Browse origin-led products, curated gifts, and export-grade lots."
+        title="Every product has an origin story."
+        copy="Our products are more than ingredients - they are journeys. Browse coffee, honey, spices, curated gifts, and export-grade lots with transparent origin, producer story, harvest information, and traceability."
       />
       <section className="container-luxury section-y">
         <div className="mb-8 grid gap-4 lg:grid-cols-[1fr_auto_auto_auto] lg:items-center">

@@ -70,7 +70,7 @@ export default async function ProductPage({ params }: PageProps) {
           </div>
         </div>
         <div className="luxury-card gold-line p-7 pt-10 lg:sticky lg:top-28 lg:self-start">
-          <h2 className="font-display text-4xl leading-none">Add to your origin ritual.</h2>
+          <h2 className="font-display text-4xl leading-none">Every purchase begins with a story.</h2>
           <p className="mt-5 text-2xl text-primary">
             {product.price === null ? "Available on enquiry" : `₹${product.price}`}
           </p>
@@ -102,6 +102,10 @@ export default async function ProductPage({ params }: PageProps) {
             <p className="kicker">Origin</p>
             <h2 className="mt-5 font-display text-3xl">{product.origin}</h2>
             <p className="body-luxury mt-5">{product.story}</p>
+            <p className="body-luxury mt-5">
+              This is where the product reveals its journey - from the soil it
+              grows in to the hands that carefully prepare it.
+            </p>
           </div>
           <div>
             <p className="kicker">Tasting notes</p>
