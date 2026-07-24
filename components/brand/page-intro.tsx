@@ -3,10 +3,7 @@ import { Reveal } from "@/components/motion/reveal";
 
 const pageHeroImages: Record<string, string> = {
   Shop: "/images/coffee.png",
-  "Our origins": "/images/kaobak-home-hero.png",
-  Impact: "/images/farmer.png",
   Traceability: "/images/coffee.png",
-  Journal: "/images/kaobak-home-hero.png",
   Wholesale: "/images/spices.png",
   Gifting: "/images/honey.png",
   About: "/images/farmer.png",

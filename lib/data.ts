@@ -33,12 +33,9 @@ export const navigation = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about" },
   { label: "Products", href: "/shop" },
-  { label: "Origins", href: "/origins" },
-  { label: "Impact", href: "/impact" },
   { label: "Traceability", href: "/traceability" },
   { label: "Wholesale", href: "/wholesale" },
   { label: "Gifting", href: "/gifting" },
-  { label: "Journal", href: "/journal" },
   { label: "Contact", href: "/contact" }
 ];
 

@@ -174,7 +174,7 @@ export default function Home() {
               the art of growing with nature rather than against it.
             </p>
             <Button asChild className="mt-8" variant="outline">
-              <Link href="/origins">Explore origins</Link>
+              <Link href="/about#origins">Explore origins</Link>
             </Button>
           </Reveal>
           <div className="grid gap-3 md:grid-cols-3 md:gap-5">
@@ -318,7 +318,7 @@ export default function Home() {
                 ))}
               </div>
               <Button asChild className="mt-8">
-                <Link href="/journal">Read origin stories</Link>
+                <Link href="/about#origin-stories">Read origin stories</Link>
               </Button>
             </div>
           </div>

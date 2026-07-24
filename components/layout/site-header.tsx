@@ -4,23 +4,17 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { FormEvent, useEffect, useRef, useState } from "react";
-import { ChevronDown, Menu, Search, ShoppingBag, X } from "lucide-react";
+import { Menu, Search, ShoppingBag, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
 
-const storyLinks = [
-  { label: "Our origins", href: "/origins" },
-  { label: "Impact", href: "/impact" },
-  { label: "Traceability", href: "/traceability" },
-  { label: "Journal", href: "/journal" }
-];
-
 const primaryLinks = [
   { label: "Shop", href: "/shop" },
+  { label: "About", href: "/about" },
+  { label: "Traceability", href: "/traceability" },
   { label: "Wholesale", href: "/wholesale" },
   { label: "Gifting", href: "/gifting" },
-  { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" }
 ];
 
@@ -36,7 +30,6 @@ export function SiteHeader() {
   const searchRef = useRef<HTMLInputElement>(null);
   const pathname = usePathname();
   const router = useRouter();
-  const storyActive = storyLinks.some((item) => isActive(pathname, item.href));
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 80);
@@ -91,22 +84,7 @@ export function SiteHeader() {
         </Link>
 
         <nav className="hidden items-center gap-1 text-[11px] font-semibold uppercase tracking-[0.12em] lg:flex">
-          <Link href="/shop" aria-current={isActive(pathname, "/shop") ? "page" : undefined} className={navClass(isActive(pathname, "/shop"))}>Shop</Link>
-          <div className="group relative">
-            <button type="button" aria-haspopup="menu" className={cn(navClass(storyActive), "flex items-center gap-1")}>
-              Our story <ChevronDown className="size-3 transition duration-300 group-hover:rotate-180" />
-            </button>
-            <div className="invisible absolute left-1/2 top-full w-56 -translate-x-1/2 translate-y-2 pt-3 opacity-0 transition duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100">
-              <div className="rounded-xl border border-border bg-card p-2 shadow-luxury">
-                {storyLinks.map((item) => (
-                  <Link key={item.href} href={item.href} aria-current={isActive(pathname, item.href) ? "page" : undefined} className={cn("block rounded-lg px-4 py-3 text-xs tracking-[0.08em] transition hover:bg-secondary hover:text-primary", isActive(pathname, item.href) ? "bg-secondary text-primary" : "text-muted-foreground")}>
-                    {item.label}
-                  </Link>
-                ))}
-              </div>
-            </div>
-          </div>
-          {primaryLinks.slice(1).map((item) => (
+          {primaryLinks.map((item) => (
             <Link key={item.href} href={item.href} aria-current={isActive(pathname, item.href) ? "page" : undefined} className={navClass(isActive(pathname, item.href))}>
               {item.label}
             </Link>
@@ -151,14 +129,6 @@ export function SiteHeader() {
             <nav className="grid grid-cols-2 gap-2">
               {primaryLinks.map((item) => (
                 <Link key={item.href} href={item.href} aria-current={isActive(pathname, item.href) ? "page" : undefined} className={cn("rounded-xl px-3 py-3 font-display text-xl transition", isActive(pathname, item.href) ? "bg-secondary text-primary" : "bg-card text-foreground")} onClick={() => setOpen(false)}>
-                  {item.label}
-                </Link>
-              ))}
-            </nav>
-            <p className="kicker mb-3 mt-6">Our story</p>
-            <nav className="grid grid-cols-2 gap-2">
-              {storyLinks.map((item) => (
-                <Link key={item.href} href={item.href} aria-current={isActive(pathname, item.href) ? "page" : undefined} className={cn("rounded-xl border border-border px-3 py-3 text-sm font-semibold transition", isActive(pathname, item.href) ? "bg-secondary text-primary" : "text-muted-foreground")} onClick={() => setOpen(false)}>
                   {item.label}
                 </Link>
               ))}
