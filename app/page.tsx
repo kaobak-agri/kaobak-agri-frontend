@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import { ProductCard } from "@/components/brand/product-card";
 import { CategoryBadge } from "@/components/brand/category-badge";
+import { HomeHeroVideo } from "@/components/brand/home-hero-video";
 import { ScrollCue } from "@/components/brand/scroll-cue";
 import { StatRow } from "@/components/brand/stat-row";
 import { Reveal } from "@/components/motion/reveal";
@@ -29,34 +30,32 @@ export default function Home() {
   return (
     <main className="overflow-hidden">
       <section className="relative min-h-screen overflow-hidden pt-28">
-        <Image
-          src="/images/kaobak-home-hero.png"
-          alt="Coffee harvesting, wild honey collection, and spices in Northeast India highlands"
-          fill
-          priority
-          sizes="100vw"
-          className="hero-media object-cover brightness-[1.04] saturate-[0.94]"
-        />
-        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(248,243,233,0.82),rgba(248,243,233,0.28)_50%,transparent_74%),linear-gradient(0deg,rgba(244,239,228,0.54),transparent_44%)]" />
+        <HomeHeroVideo />
+        <div className="hero-vignette hero-vignette-home absolute inset-0" />
         <div className="container-luxury relative flex min-h-[calc(100vh-7rem)] items-end pb-16">
-          <Reveal className="hero-copy-panel max-w-3xl">
-            <p className="font-accent text-2xl text-primary sm:text-3xl">
+          <Reveal className="hero-copy-overlay w-full min-w-0 max-w-3xl">
+            <p className="hero-kicker max-w-full break-words">
               Specialty coffee. Wild forest honey. Organic spices.
             </p>
-            <h1 className="headline-xl mt-6 max-w-5xl">
+            <h1 className="hero-title mt-5 max-w-full break-words">
               From the highlands of Northeast India to the world.
             </h1>
-            <p className="body-luxury mt-7 max-w-xl">
+            <p className="hero-body mt-6 max-w-full break-words sm:max-w-xl">
               Traceable, forest-friendly products from the highlands of Northeast India.
             </p>
-            <div className="mt-9 flex flex-wrap gap-3">
-              <Button asChild size="lg">
+            <div className="mt-8 flex flex-wrap gap-3">
+              <Button asChild size="lg" className="hero-button-primary">
                 <Link href="/shop">
                   Explore products
                   <ArrowRight data-icon="inline-end" />
                 </Link>
               </Button>
-              <Button asChild variant="outline" size="lg">
+              <Button
+                asChild
+                variant="outline"
+                size="lg"
+                className="hero-button-secondary"
+              >
                 <Link href="/about">Discover Kaobak</Link>
               </Button>
             </div>
@@ -289,7 +288,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-[0.88fr_1.12fr]">
             <div className="relative min-h-[430px]">
               <Image
-                src="/images/farmer.png"
+                src="https://res.cloudinary.com/dmot064z/image/upload/f_auto,q_auto:good/v1785132720/Beside_real_change_myfkue.jpg"
                 alt="Kaobak farmer story"
                 fill
                 sizes="(max-width: 1024px) 100vw, 46vw"

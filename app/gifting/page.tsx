@@ -16,7 +16,13 @@ export default function GiftingPage() {
       <section className="container-luxury section-y grid gap-12 lg:grid-cols-[1fr_0.9fr] lg:items-center">
         <Reveal>
           <div className="relative aspect-[5/4] overflow-hidden rounded-sm">
-            <Image src="/images/kaobak-hero.png" alt="Kaobak gift hamper inspiration" fill sizes="50vw" className="object-cover" />
+            <Image
+              src="https://res.cloudinary.com/dmot064z/image/upload/f_auto,q_auto:good/v1785132959/Artisanal_gift_hampers_with_provenance_dabs3q.png"
+              alt="Kaobak artisanal gift hampers with provenance"
+              fill
+              sizes="(max-width: 1024px) 100vw, 52vw"
+              className="object-cover"
+            />
           </div>
         </Reveal>
         <Reveal delay={0.1}>

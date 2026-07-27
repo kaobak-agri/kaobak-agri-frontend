@@ -117,12 +117,88 @@
     @apply rounded-2xl border border-border bg-secondary/70;
   }
 
-  .hero-copy-panel {
-    @apply rounded-2xl border border-white/50 bg-[rgba(247,243,236,0.88)] p-6 shadow-[0_28px_90px_rgba(42,36,32,0.16)] backdrop-blur-md sm:p-9 lg:p-11;
+  .hero-copy-overlay {
+    @apply relative border-l border-[rgba(213,166,99,0.72)] pl-5 sm:pl-7;
+    filter: drop-shadow(0 12px 24px rgba(9, 12, 9, 0.2));
+  }
+
+  .hero-copy-overlay::before {
+    content: "";
+    position: absolute;
+    left: -1px;
+    top: 0;
+    width: 1px;
+    height: 4.5rem;
+    background: #d5a663;
+    box-shadow: 0 0 28px rgba(213, 166, 99, 0.32);
+  }
+
+  .hero-kicker {
+    @apply font-label text-[10px] font-semibold uppercase tracking-[0.24em] sm:text-xs;
+    color: #e2b979;
+    text-shadow: 0 2px 18px rgba(4, 7, 4, 0.72);
+  }
+
+  .hero-title {
+    @apply font-display text-4xl font-medium leading-[0.98] tracking-[-0.025em] sm:text-5xl lg:text-6xl xl:text-7xl;
+    color: #f5f0e6;
+    text-wrap: balance;
+    text-shadow: 0 3px 30px rgba(5, 8, 5, 0.78);
+  }
+
+  .hero-body {
+    @apply text-sm leading-7 sm:text-base sm:leading-8;
+    color: rgba(245, 240, 230, 0.84);
+    text-shadow: 0 2px 18px rgba(5, 8, 5, 0.76);
+  }
+
+  .hero-vignette {
+    background:
+      linear-gradient(90deg, rgba(10, 14, 10, 0.76) 0%, rgba(12, 16, 12, 0.58) 34%, rgba(12, 16, 12, 0.18) 64%, transparent 82%),
+      linear-gradient(0deg, rgba(9, 12, 9, 0.52) 0%, transparent 52%);
+  }
+
+  .hero-vignette-home {
+    background:
+      linear-gradient(90deg, rgba(8, 12, 8, 0.78) 0%, rgba(10, 14, 10, 0.54) 35%, rgba(10, 14, 10, 0.12) 66%, transparent 84%),
+      linear-gradient(0deg, rgba(8, 11, 8, 0.58) 0%, transparent 50%);
+  }
+
+  .hero-button-primary {
+    border-color: #d8ad70 !important;
+    background: #d8ad70 !important;
+    color: #17170f !important;
+    box-shadow: 0 14px 36px rgba(5, 8, 5, 0.24);
+  }
+
+  .hero-button-primary:hover {
+    background: #e5bf87 !important;
+  }
+
+  .hero-button-secondary {
+    border-color: rgba(245, 240, 230, 0.42) !important;
+    background: rgba(8, 11, 8, 0.12) !important;
+    color: #f5f0e6 !important;
+    backdrop-filter: blur(2px);
+  }
+
+  .hero-button-secondary:hover {
+    border-color: #d8ad70 !important;
+    background: rgba(245, 240, 230, 0.1) !important;
+    color: #f5f0e6 !important;
   }
 
   .hero-media {
     animation: hero-settle 1.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  @media (max-width: 640px) {
+    .hero-vignette,
+    .hero-vignette-home {
+      background:
+        linear-gradient(90deg, rgba(8, 12, 8, 0.7) 0%, rgba(9, 13, 9, 0.38) 58%, rgba(9, 13, 9, 0.08) 100%),
+        linear-gradient(0deg, rgba(8, 11, 8, 0.72) 0%, rgba(8, 11, 8, 0.18) 58%, transparent 82%);
+    }
   }
 
   .mobile-card-rail {

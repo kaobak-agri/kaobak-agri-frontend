@@ -63,7 +63,7 @@ export function IndiaSourcingMap() {
                 <path
                   key={location.id}
                   d={location.path}
-                  aria-label={location.name}
+                  aria-label={`${location.name}${isNagaland ? " — Kaobak home state" : isNortheast ? " — Northeast India" : ""}`}
                   vectorEffect="non-scaling-stroke"
                   className={cn(
                     "stroke-[#647268] stroke-[1.15] transition duration-300",
@@ -73,9 +73,7 @@ export function IndiaSourcingMap() {
                         ? "fill-[#496253] hover:fill-[#5b7565]"
                         : "fill-[#f8f3e9] hover:fill-[#ece6da]"
                   )}
-                >
-                  <title>{location.name}{isNagaland ? " — Kaobak home state" : isNortheast ? " — Northeast India" : ""}</title>
-                </path>
+                />
               );
             })}
           </motion.svg>

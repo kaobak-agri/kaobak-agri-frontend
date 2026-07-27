@@ -64,7 +64,8 @@ export const products: Product[] = [
     name: "Nagaland Arabica — Washed",
     category: "Coffee",
     price: 899,
-    image: "/images/coffee.png",
+    image:
+      "https://res.cloudinary.com/dmot064z/image/upload/f_auto,q_auto:good/v1785132568/Nagaland_Arabica_Washed_d3sifw.jpg",
     origin: "Nagaland highlands, 1,300–1,800 MASL",
     summary: "A clean, bright high-altitude Arabica with citrus, jasmine, and honeyed sweetness.",
     story:
@@ -83,7 +84,8 @@ export const products: Product[] = [
     name: "Wild Forest Honey",
     category: "Honey",
     price: 620,
-    image: "/images/honey.png",
+    image:
+      "https://res.cloudinary.com/dmot064z/image/upload/f_auto,q_auto:good/v1785130689/Wild_forest_honey_r04s9s.jpg",
     origin: "Protected forest belts",
     summary: "Raw amber honey with floral depth and a mineral forest finish.",
     story:
@@ -102,7 +104,8 @@ export const products: Product[] = [
     name: "Apis Cerana Wild Cherry Honey",
     category: "Honey",
     price: null,
-    image: "/images/honey.png",
+    image:
+      "https://res.cloudinary.com/dmot064z/image/upload/f_auto,q_auto:good/v1785132607/Apis_cerana_wild_cherry_honey_cfjc8k.jpg",
     origin: "Nagaland highland cherry belts",
     summary: "A rare early-spring honey with gentle blossom aromatics and a warm reddish-amber hue.",
     story:
@@ -254,7 +257,8 @@ export const products: Product[] = [
     name: "Lakadong Turmeric",
     category: "Spices",
     price: null,
-    image: "/images/spices.png",
+    image:
+      "https://res.cloudinary.com/dmot064z/image/upload/f_auto,q_auto:good/v1785157047/lakadong_turmeric_gxncvb.jpg",
     origin: "West Jaintia Hills, Meghalaya",
     summary: "A prized turmeric cultivar known for exceptional colour, aroma, and naturally high curcumin.",
     story: "Cultivated in the Lakadong landscape and harvested in winter, this celebrated turmeric is sought by culinary, wellness, cosmetic, and specialty food buyers.",
@@ -517,21 +521,24 @@ export const collections = [
     category: "Coffee" as const,
     title: "Specialty Coffee",
     href: "/shop?category=Coffee",
-    image: "/images/coffee.png",
+    image:
+      "https://res.cloudinary.com/dmot064z/image/upload/f_auto,q_auto:good/v1785130601/Speciality_coffee_mp5anf.jpg",
     copy: "Single-origin beans from highland gardens, roasted with restraint."
   },
   {
     category: "Honey" as const,
     title: "Wild Forest Honey",
     href: "/shop?category=Honey",
-    image: "/images/honey.png",
+    image:
+      "https://res.cloudinary.com/dmot064z/image/upload/f_auto,q_auto:good/v1785130689/Wild_forest_honey_r04s9s.jpg",
     copy: "Raw, seasonal honey shaped by forest bloom cycles."
   },
   {
     category: "Spices" as const,
     title: "Organic Spices",
     href: "/shop?category=Spices",
-    image: "/images/spices.png",
+    image:
+      "https://res.cloudinary.com/dmot064z/image/upload/f_auto,q_auto:good/v1785130767/Organic_spices_pibfvy.heic",
     copy: "Turmeric, ginger, pepper, and aromatics grown in living soils."
   }
 ];
@@ -577,13 +584,15 @@ export const originRegions = [
     region: "Forest Belts",
     focus: "Wild honey",
     detail: "Seasonal honey collection aligned with forest conservation.",
-    image: "/images/honey.png"
+    image:
+      "https://res.cloudinary.com/dmot064z/image/upload/f_auto,q_auto:good/v1785132689/Forest_belts_nneehy.png"
   },
   {
     region: "Assam & Meghalaya clusters",
     focus: "Coffee and spices",
     detail: "Regional sourcing relationships for larger commerce requirements.",
-    image: "/images/spices.png"
+    image:
+      "https://res.cloudinary.com/dmot064z/image/upload/f_auto,q_auto:good/v1785132714/Assam_ans_Meghalaya_clusters_elrcxh.png"
   }
 ];
 
@@ -599,21 +608,24 @@ export const journalPosts = [
     slug: "brewing-highland-coffee",
     title: "Brewing highland coffee without masking origin",
     category: "Coffee",
-    image: "/images/coffee.png",
+    image:
+      "https://res.cloudinary.com/dmot064z/image/upload/f_auto,q_auto:good/v1785132813/Brewing_highland_coffee_without_masking_origin_e9qlns.jpg",
     excerpt: "A slow, clean brewing guide for preserving sweetness, clarity, and the character of its mountain origin."
   },
   {
     slug: "forest-honey-cycles",
     title: "How wild honey changes with forest bloom cycles",
     category: "Honey",
-    image: "/images/honey.png",
+    image:
+      "https://res.cloudinary.com/dmot064z/image/upload/f_auto,q_auto:good/v1785132851/How_wild_honey_changes_with_forest_bloom_cycles_ykdrv6.jpg",
     excerpt: "A seasonal look at texture, color, aroma, sustainable harvesting practices, and conservation-linked forest bloom cycles."
   },
   {
     slug: "spice-pantry",
     title: "Cooking with turmeric, ginger, and black pepper",
     category: "Recipes",
-    image: "/images/spices.png",
+    image:
+      "https://res.cloudinary.com/dmot064z/image/upload/f_auto,q_auto:good/v1785132881/Cooking_with_turmeric_ginger_and_black_pepper_rdtwe5.jpg",
     excerpt: "Regional recipes and field notes for building warmth, depth, and wellness into daily food."
   }
 ];

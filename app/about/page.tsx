@@ -43,7 +43,13 @@ export default function AboutPage() {
         </Reveal>
         <Reveal delay={0.1}>
           <div className="relative aspect-[4/5] overflow-hidden rounded-sm">
-            <Image src="/images/farmer.png" alt="Kaobak team and mission" fill sizes="50vw" className="object-cover" />
+            <Image
+              src="https://res.cloudinary.com/dmot064z/image/upload/f_auto,q_auto:good/v1785132789/Where_every_seed_begins_a_story_mkmesu.heic"
+              alt="A Kaobak seedling beginning its journey in Northeast India"
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-cover"
+            />
           </div>
         </Reveal>
       </section>
@@ -166,7 +172,16 @@ export default function AboutPage() {
           </Reveal>
 
           <Reveal delay={0.1} className="luxury-card p-7 sm:p-8">
-            <p className="font-display text-4xl text-foreground">The production journey</p>
+            <div className="relative aspect-[16/9] overflow-hidden rounded-xl">
+              <Image
+                src="https://res.cloudinary.com/dmot064z/image/upload/f_jpg,q_auto:good/v1785156824/IMG_3245_Original_iufloa.heic"
+                alt="Batch-level product traceability documentation"
+                fill
+                sizes="(max-width: 1024px) 100vw, 55vw"
+                className="object-cover"
+              />
+            </div>
+            <p className="mt-8 font-display text-4xl text-foreground">The production journey</p>
             <div className="mt-8 grid gap-3 sm:grid-cols-2">
               {storyTimeline.map((item, index) => (
                 <div key={item} className="soft-panel flex items-center gap-4 p-4">
