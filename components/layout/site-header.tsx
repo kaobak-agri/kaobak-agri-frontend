@@ -72,7 +72,11 @@ export function SiteHeader() {
       )}
     >
       <div className={cn("container-luxury flex items-center justify-between gap-5 transition-all duration-500", scrolled ? "min-h-16" : "min-h-20")}>
-        <Link href="/" className="group flex items-center" aria-label="Kaobak home">
+        <Link
+          href="/"
+          className="group flex flex-col items-center"
+          aria-label="Kaobak home"
+        >
           <Image
             src="/images/kaobak-logo-black.png"
             alt="Kaobak"
@@ -81,6 +85,9 @@ export function SiteHeader() {
             priority
             className={cn("w-auto object-contain transition-all duration-500 group-hover:opacity-80", scrolled ? "h-12" : "h-16")}
           />
+          <span className="mt-1 font-accent text-[10px] leading-none tracking-[0.11em] text-primary/80 transition-colors duration-300 group-hover:text-primary">
+            Harvesting Possibilities
+          </span>
         </Link>
 
         <nav className="hidden items-center gap-1 text-[11px] font-semibold uppercase tracking-[0.12em] lg:flex">

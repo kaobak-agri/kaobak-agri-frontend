@@ -10,13 +10,18 @@ export function SiteFooter() {
     <footer className="border-t border-border bg-secondary">
       <div className="container-luxury grid gap-14 py-16 lg:grid-cols-[1.2fr_1fr_1fr]">
         <div className="flex flex-col gap-6">
-          <Image
-            src="/images/kaobak-logo-black.png"
-            alt="Kaobak"
-            width={150}
-            height={150}
-            className="h-24 w-auto object-contain"
-          />
+          <div className="w-fit text-center">
+            <Image
+              src="/images/kaobak-logo-black.png"
+              alt="Kaobak"
+              width={150}
+              height={150}
+              className="h-24 w-auto object-contain"
+            />
+            <p className="mt-0.5 font-accent text-sm tracking-[0.1em] text-primary">
+              Harvesting Possibilities
+            </p>
+          </div>
           <p className="max-w-sm text-sm leading-7 text-muted-foreground">
             Premium origin commerce for specialty coffee, wild forest honey,
             organic spices, luxury gifting, and export-grade products from

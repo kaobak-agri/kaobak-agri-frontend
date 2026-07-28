@@ -227,8 +227,8 @@ export default function Home() {
             <div className="grid min-h-full lg:grid-cols-2">
               <div className="relative min-h-[360px]">
                 <Image
-                  src="/images/coffee.png"
-                  alt="Traceable Kaobak coffee"
+                  src="https://res.cloudinary.com/dmot064z/image/upload/f_jpg,q_auto:good/v1785156824/IMG_3245_Original_iufloa.heic"
+                  alt="Batch-level traceability proof for Kaobak products"
                   fill
                   sizes="(max-width: 1024px) 100vw, 45vw"
                   className="object-cover"

@@ -576,9 +576,10 @@ export const pillars: Array<{ title: string; text: string; icon: LucideIcon }> =
 export const originRegions = [
   {
     region: "Tuensang, Nagaland",
-    focus: "Coffee, ginger, turmeric",
+    focus: "ARABICA COFFEE",
     detail: "Highland gardens, careful drying, producer-led sorting.",
-    image: "/images/coffee.png"
+    image:
+      "https://res.cloudinary.com/dmot064z/image/upload/f_jpg,q_auto:good/v1785214078/Tuensang_Nagaland_pu5o5q.heic"
   },
   {
     region: "Forest Belts",
@@ -588,8 +589,8 @@ export const originRegions = [
       "https://res.cloudinary.com/dmot064z/image/upload/f_auto,q_auto:good/v1785132689/Forest_belts_nneehy.png"
   },
   {
-    region: "Assam & Meghalaya clusters",
-    focus: "Coffee and spices",
+    region: "Meghalaya - Species and Honey",
+    focus: "Species and honey",
     detail: "Regional sourcing relationships for larger commerce requirements.",
     image:
       "https://res.cloudinary.com/dmot064z/image/upload/f_auto,q_auto:good/v1785132714/Assam_ans_Meghalaya_clusters_elrcxh.png"

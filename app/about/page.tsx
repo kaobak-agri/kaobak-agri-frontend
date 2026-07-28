@@ -111,7 +111,16 @@ export default function AboutPage() {
                     <Image src={region.image} alt={region.region} fill sizes="(max-width: 640px) 100vw, 150px" className="object-cover" />
                   </div>
                   <div className="p-5">
-                    <CategoryBadge category={region.focus.includes("honey") ? "Honey" : region.focus.includes("spices") || region.focus.includes("ginger") ? "Spices" : "Coffee"} />
+                    <CategoryBadge
+                      category={
+                        region.focus.toLowerCase().includes("honey")
+                          ? "Honey"
+                          : region.focus.toLowerCase().includes("spices") ||
+                              region.focus.toLowerCase().includes("ginger")
+                            ? "Spices"
+                            : "Coffee"
+                      }
+                    />
                     <h3 className="mt-3 font-display text-2xl leading-tight">{region.region}</h3>
                     <p className="mt-2 text-sm leading-6 text-muted-foreground">{region.detail}</p>
                   </div>
