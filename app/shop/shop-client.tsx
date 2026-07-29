@@ -18,17 +18,11 @@ export function ShopClient() {
   const [category, setCategory] = useState(initialCategory);
   const [query, setQuery] = useState(params.get("search") ?? "");
   const [sort, setSort] = useState("featured");
-  const [availability, setAvailability] = useState("all");
   const deferredQuery = useDeferredValue(query);
 
   const filtered = useMemo(() => {
     const next = products
       .filter((product) => category === "All" || product.category === category)
-      .filter((product) => {
-        if (availability === "priced") return product.price !== null;
-        if (availability === "enquire") return product.price === null;
-        return true;
-      })
       .filter((product) =>
         `${product.name} ${product.summary} ${product.origin}`
           .toLowerCase()
@@ -38,11 +32,9 @@ export function ShopClient() {
     if (sort === "featured") return next;
 
     return next.toSorted((a, b) => {
-      if (sort === "price-low") return (a.price ?? Number.MAX_SAFE_INTEGER) - (b.price ?? Number.MAX_SAFE_INTEGER);
-      if (sort === "price-high") return (b.price ?? -1) - (a.price ?? -1);
       return a.name.localeCompare(b.name);
     });
-  }, [availability, category, deferredQuery, sort]);
+  }, [category, deferredQuery, sort]);
 
   return (
     <main>
@@ -52,7 +44,7 @@ export function ShopClient() {
         copy="Our products are more than ingredients - they are journeys. Browse coffee, honey, spices, curated gifts, and export-grade lots with transparent origin, producer story, harvest information, and traceability."
       />
       <section className="container-luxury section-y">
-        <div className="mb-8 grid gap-4 lg:grid-cols-[1fr_auto_auto_auto] lg:items-center">
+        <div className="mb-8 grid gap-4 lg:grid-cols-[1fr_auto_auto] lg:items-center">
           <div className="flex flex-wrap gap-2">
             {categories.map((item) => (
               <Button
@@ -78,16 +70,6 @@ export function ShopClient() {
             />
           </label>
           <select
-            value={availability}
-            onChange={(event) => setAvailability(event.target.value)}
-            className="min-h-12 rounded-sm border border-input bg-card px-4 text-sm text-foreground"
-            aria-label="Filter by availability"
-          >
-            <option value="all">All availability</option>
-            <option value="priced">Ready to buy</option>
-            <option value="enquire">Limited lots</option>
-          </select>
-          <select
             value={sort}
             onChange={(event) => setSort(event.target.value)}
             className="min-h-12 rounded-sm border border-input bg-card px-4 text-sm text-foreground"
@@ -95,8 +77,6 @@ export function ShopClient() {
           >
             <option value="featured">Featured</option>
             <option value="name">Name A–Z</option>
-            <option value="price-low">Price low to high</option>
-            <option value="price-high">Price high to low</option>
           </select>
         </div>
         <div className="mb-5 flex items-center justify-between border-b border-border pb-4 text-sm text-muted-foreground">

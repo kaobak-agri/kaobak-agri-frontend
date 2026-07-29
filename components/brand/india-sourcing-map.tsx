@@ -15,7 +15,7 @@ type IndiaLocation = {
 
 const sourcingPoints = [
   { name: "Nagaland", focus: "Coffee and spices" },
-  { name: "Assam", focus: "Coffee and regional sourcing" },
+  { name: "Assam", focus: "Tea and honey" },
   { name: "Meghalaya", focus: "Spices and producer clusters" }
 ];
 

@@ -71,28 +71,18 @@ export default async function ProductPage({ params }: PageProps) {
         </div>
         <div className="luxury-card gold-line p-7 pt-10 lg:sticky lg:top-28 lg:self-start">
           <h2 className="font-display text-4xl leading-none">Every purchase begins with a story.</h2>
-          <p className="mt-5 text-2xl text-primary">
-            {product.price === null ? "Available on enquiry" : `₹${product.price}`}
-          </p>
           <p className="body-luxury mt-7">{product.summary}</p>
           <div className="mt-6 flex gap-1 text-primary" aria-label="Rated five stars">
             {[1, 2, 3, 4, 5].map((star) => (
               <Star key={star} className="size-4 fill-current" />
             ))}
           </div>
-          {product.price === null ? (
-            <Button asChild className="mt-8 w-full sm:w-auto" size="lg">
-              <Link href={`/contact?product=${product.slug}`}>
-                <ShoppingBag data-icon="inline-start" />
-                Request availability
-              </Link>
-            </Button>
-          ) : (
-            <Button className="mt-8 w-full sm:w-auto" size="lg">
+          <Button asChild className="mt-8 w-full sm:w-auto" size="lg">
+            <Link href={`/contact?product=${product.slug}`}>
               <ShoppingBag data-icon="inline-start" />
-              Add to cart
-            </Button>
-          )}
+              Enquire about product
+            </Link>
+          </Button>
         </div>
       </section>
 

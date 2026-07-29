@@ -35,23 +35,16 @@ export function ProductCard({ product, compact = false }: { product: Product; co
           </div>
         </div>
         <div className={cn("gold-line flex flex-1 flex-col", compact ? "gap-2 px-3 pb-4 pt-4 md:gap-4 md:px-6 md:pb-6 md:pt-7" : "gap-4 px-6 pb-6 pt-7")}>
-          <div className={cn("flex items-start", compact ? "flex-col gap-1 md:flex-row md:justify-between md:gap-4" : "justify-between gap-4")}>
+          <div className="flex items-start">
             <h3 className={cn("font-display leading-tight text-foreground", compact ? "text-lg md:text-2xl" : "text-2xl")}>
               {product.name}
             </h3>
-            {product.price === null ? (
-              <span className="shrink-0 rounded-full bg-secondary px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.12em] text-primary md:text-xs">
-                Limited lot · enquire
-              </span>
-            ) : (
-              <span className="shrink-0 text-sm font-bold text-primary">₹{product.price}</span>
-            )}
           </div>
           <p className={cn("line-clamp-2 text-sm text-muted-foreground", compact ? "hidden leading-5 md:block md:leading-6" : "leading-6")}>
             {product.summary}
           </p>
           <span className={cn("mt-auto inline-flex items-center gap-2 font-label font-semibold uppercase text-primary", compact ? "pt-2 text-[10px] tracking-[0.14em] md:text-xs md:tracking-[0.2em]" : "text-xs tracking-[0.2em]")}>
-            {product.price === null ? "View & enquire" : "View & buy"}
+            View details
             <ArrowRight className="size-3" />
           </span>
         </div>
