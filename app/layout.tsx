@@ -11,12 +11,26 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/images/kaobak-logo-black.png",
-        type: "image/png"
+        url: "/favicon.ico",
+        sizes: "48x48"
+      },
+      {
+        url: "/favicon-48.png",
+        type: "image/png",
+        sizes: "48x48"
+      },
+      {
+        url: "/icon-192.png",
+        type: "image/png",
+        sizes: "192x192"
       }
     ],
-    shortcut: "/images/kaobak-logo-black.png",
-    apple: "/images/kaobak-logo-black.png"
+    shortcut: "/favicon.ico",
+    apple: {
+      url: "/apple-touch-icon.png",
+      type: "image/png",
+      sizes: "180x180"
+    }
   }
 };
 
