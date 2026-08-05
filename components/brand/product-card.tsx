@@ -16,7 +16,7 @@ export function ProductCard({ product, compact = false }: { product: Product; co
   }[product.category];
 
   return (
-    <Link href={`/products/${product.slug}`} className="group block h-full">
+    <Link href={`/contact?product=${encodeURIComponent(product.name)}`} className="group block h-full">
       <article className={cn("luxury-card luxury-card-hover flex h-full flex-col overflow-hidden border-t-[3px]", accent)}>
         <div
           className={cn(
@@ -45,7 +45,7 @@ export function ProductCard({ product, compact = false }: { product: Product; co
             {product.summary}
           </p>
           <span className={cn("mt-auto inline-flex items-center gap-2 font-label font-semibold uppercase text-primary", compact ? "pt-2 text-[10px] tracking-[0.14em] md:text-xs md:tracking-[0.2em]" : "text-xs tracking-[0.2em]")}>
-            View details
+            Enquire about the product
             <ArrowRight className="size-3" />
           </span>
         </div>

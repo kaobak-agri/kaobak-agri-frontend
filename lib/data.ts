@@ -339,18 +339,6 @@ export const products: Product[] = [
     trace: { batch: "KBK-SP-SBP", village: "Meghalaya grower network", harvest: "Seasonal", process: "Sun-dried whole peppercorn", certification: "Forest-garden sourcing" }
   },
   {
-    slug: "jaiur-prickly-ash",
-    name: "Jaiur Winged Prickly Ash",
-    category: "Spices",
-    price: null,
-    image: "/images/spices.png",
-    origin: "Khasi Hills, Meghalaya",
-    summary: "A rare citrus-family spice with a vivid aroma and signature numbing, tingling sensation.",
-    story: "Jaiur is a distinctive local Zanthoxylum traditionally used in marinades and spice blends, with small harvests that remain largely uncommercialized.",
-    notes: ["Citrus", "Numbing", "Tingling", "Rare harvest"],
-    trace: { batch: "KBK-SP-JAI", village: "Khasi Hills", harvest: "Limited seasonal harvest", process: "Handpicked and air-dried", certification: "Wild and smallholder sourced" }
-  },
-  {
     slug: "indian-bay-leaf-meghalaya",
     name: "Indian Bay Leaf — Meghalaya",
     category: "Spices",
@@ -455,18 +443,6 @@ export const products: Product[] = [
     trace: { batch: "KBK-SP-SCP", village: "Eastern Nagaland", harvest: "Seasonal", process: "Handpicked husks, naturally dried", certification: "Compost-only family farms" }
   },
   {
-    slug: "nagaland-bay-leaf",
-    name: "Nagaland Bay Leaf",
-    category: "Spices",
-    price: null,
-    image: "/images/spices.png",
-    origin: "Nagaland forest and kitchen gardens",
-    summary: "A warm cinnamon-earth aromatic used across curries, stews, pickles, and traditional infusions.",
-    story: "Gathered from forest belts and household gardens, these Cinnamomum tamala leaves are shade-dried to retain their gentle fragrance.",
-    notes: ["Cinnamon-earth", "Whole leaf", "Forest sourced", "Tea aromatic"],
-    trace: { batch: "KBK-SP-NBL", village: "Nagaland forest communities", harvest: "Seasonal", process: "Shade-dried whole leaf", certification: "Forest and kitchen-garden sourced" }
-  },
-  {
     slug: "naga-black-sesame",
     name: "Naga Black Sesame",
     category: "Spices",
@@ -490,49 +466,6 @@ export const products: Product[] = [
     story: "Long used in Eastern Naga kitchens, wild sumac is hand-gathered from the hills and prepared as a tart powder for food and traditional tonics.",
     notes: ["Tangy", "Deep red", "Wild harvested", "Berry spice"],
     trace: { batch: "KBK-SP-SUM", village: "Eastern Nagaland", harvest: "Limited wild season", process: "Hand-gathered, dried and milled", certification: "Wild-harvested" }
-  },
-  {
-    slug: "naga-garlic",
-    name: "Naga Garlic",
-    category: "Spices",
-    price: null,
-    image: "/images/spices.png",
-    origin: "Nagaland kitchen gardens",
-    summary: "A pungent local garlic strain grown without synthetic inputs in household and community plots.",
-    story: "A foundation of Naga cooking, local garlic is used fresh, fermented, and smoked, often alongside Raja Mircha, ginger, and bamboo shoot.",
-    notes: ["Pungent", "Local strain", "Fermented", "Smoked"],
-    trace: { batch: "KBK-SP-GAR", village: "Nagaland kitchen-garden network", harvest: "Seasonal", process: "Cured whole bulbs", certification: "Chemical-free traditional practice" }
-  },
-  {
-    slug: "lathsa-wild-herb",
-    name: "Lathsa Wild Herb-Spice",
-    category: "Spices",
-    price: null,
-    image: "/images/spices.png",
-    origin: "Eastern Nagaland forests",
-    summary: "A rare aromatic wild herb-spice with a distinctive fragrance rooted in Eastern Naga foodways.",
-    story: "Lathsa is gathered from forested hills and used in traditional preparations, representing the remarkable botanical breadth of Eastern Naga cuisine.",
-    notes: ["Aromatic", "Wild herb", "Rare", "Eastern Naga"],
-    trace: { batch: "KBK-SP-LAT", village: "Eastern Nagaland", harvest: "Wild seasonal harvest", process: "Hand-gathered and shade-dried", certification: "Wild-harvested" }
-  },
-  {
-    slug: "organic-turmeric-ginger",
-    name: "Organic Turmeric & Ginger Set",
-    category: "Spices",
-    price: 540,
-    image: "/images/spices.png",
-    origin: "Hill spice gardens",
-    summary: "Curated roots and warming aromatics grown in living soils.",
-    story:
-      "Turmeric and ginger are cured slowly, preserving volatile oils and color while supporting mixed farming systems.",
-    notes: ["Golden turmeric", "Fresh ginger", "Pepper warmth"],
-    trace: {
-      batch: "KBK-SP-2403",
-      village: "Naga Spice Collective",
-      harvest: "February 2026",
-      process: "Washed, sliced, solar dried",
-      certification: "Organic practices"
-    }
   },
   {
     slug: "origin-gift-hamper",
