@@ -3,6 +3,7 @@ import { cn } from "@/lib/utils";
 
 const categoryStyles: Record<string, string> = {
   Coffee: "border-[#d8c0ae] bg-[#efe2d6] text-[#6b4226]",
+  Tea: "border-[#bfd1bf] bg-[#e4ede4] text-[#365b3d]",
   Honey: "border-[#ead49c] bg-[#faeed0] text-[#8a5a0f]",
   Spices: "border-[#cdd5ae] bg-[#e8ecd9] text-[#5f6c36]",
   Recipes: "border-[#cdd5ae] bg-[#e8ecd9] text-[#5f6c36]",

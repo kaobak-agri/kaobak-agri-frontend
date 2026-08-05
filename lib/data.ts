@@ -42,7 +42,7 @@ export const navigation = [
 export type Product = {
   slug: string;
   name: string;
-  category: "Coffee" | "Honey" | "Spices" | "Gifting" | "Export";
+  category: "Coffee" | "Tea" | "Honey" | "Spices" | "Gifting" | "Export";
   price: number | null;
   image: string;
   origin: string;
@@ -124,7 +124,8 @@ export const products: Product[] = [
     name: "Apis Cerana Wild Apple Honey",
     category: "Honey",
     price: null,
-    image: "/images/honey.png",
+    image:
+      "https://res.cloudinary.com/dmot064z/image/upload/f_auto,q_auto:good/v1785917306/Apis_Cerana_Wild_Apple_Honey_wdyzbw.png",
     origin: "Nagaland wild apple groves",
     summary: "Delicate fruit-blossom aromatics meet a rounded sweetness and pale amber clarity.",
     story:
@@ -143,7 +144,8 @@ export const products: Product[] = [
     name: "Apis Cerana Wildflower Honey",
     category: "Honey",
     price: null,
-    image: "/images/honey.png",
+    image:
+      "https://res.cloudinary.com/dmot064z/image/upload/f_auto,q_auto:good/v1785917306/Apis_Cerana_Wildflower_Honey_ogyjbe.png",
     origin: "Nagaland mixed forest blooms",
     summary: "A light golden forest honey whose floral character shifts naturally with each season.",
     story:
@@ -162,7 +164,8 @@ export const products: Product[] = [
     name: "Rock Bee Wildflower Honey",
     category: "Honey",
     price: null,
-    image: "/images/honey.png",
+    image:
+      "https://res.cloudinary.com/dmot064z/image/upload/f_auto,q_auto:good/v1785917305/Rock_Bee_Wildflower_Honey_jjvycg.jpg",
     origin: "Kiphire forest and cliff belts, Nagaland",
     summary: "A deep amber wild honey with a fluid body, measured sweetness, and robust forest character.",
     story:
@@ -181,7 +184,8 @@ export const products: Product[] = [
     name: "Stingless Bee Wildflower Honey",
     category: "Honey",
     price: null,
-    image: "/images/honey.png",
+    image:
+      "https://res.cloudinary.com/dmot064z/image/upload/f_auto,q_auto:good/v1785917307/Stingless_Bee_Wildflower_Honey_rbsums.jpg",
     origin: "Nagaland forest villages",
     summary: "A rare runny honey balancing bright natural acidity with a subtle forest sweetness.",
     story:
@@ -200,7 +204,8 @@ export const products: Product[] = [
     name: "Apis Cerana Wild Banana Honey",
     category: "Honey",
     price: null,
-    image: "/images/honey.png",
+    image:
+      "https://res.cloudinary.com/dmot064z/image/upload/f_auto,q_auto:good/v1785917306/Apis_Cerana_Wild_Banana_Honey_y1s0k2.png",
     origin: "Nagaland forest gardens",
     summary: "A small seasonal lot guided by the lush floral character of wild banana blossoms.",
     story:
@@ -219,7 +224,8 @@ export const products: Product[] = [
     name: "Nagaland Arabica — Honey Process",
     category: "Coffee",
     price: null,
-    image: "/images/coffee.png",
+    image:
+      "https://res.cloudinary.com/dmot064z/image/upload/f_auto,q_auto:good/v1785917308/Nagaland_Arabica_Honey_Process_uzcj0m.jpg",
     origin: "Nagaland highlands, 1,300–1,800 MASL",
     summary: "A round, sweet microlot with caramel, honeycomb, tropical fruit, and a creamy body.",
     story:
@@ -238,7 +244,8 @@ export const products: Product[] = [
     name: "Nagaland Arabica — Natural",
     category: "Coffee",
     price: null,
-    image: "/images/coffee.png",
+    image:
+      "https://res.cloudinary.com/dmot064z/image/upload/f_auto,q_auto:good/v1785917308/Nagaland_Arabica_Natural_svuks5.jpg",
     origin: "Nagaland highlands, 1,300–1,800 MASL",
     summary: "A fruit-forward whole-cherry lot with strawberry, mango, dark berry, and wine-like depth.",
     story:
@@ -250,6 +257,46 @@ export const products: Product[] = [
       harvest: "Seasonal lot",
       process: "Natural whole-cherry process",
       certification: "Organic-by-practice sourcing"
+    }
+  },
+  {
+    slug: "rosella-tea",
+    name: "Rosella Tea",
+    category: "Tea",
+    price: null,
+    image:
+      "https://res.cloudinary.com/dmot064z/image/upload/f_auto,q_auto:good/v1785917306/rosella_tea_lr0bkf.jpg",
+    origin: "Northeast India smallholder gardens",
+    summary: "Ruby-red rosella calyces with a bright, naturally tart fruit character.",
+    story:
+      "Carefully harvested rosella is dried in small lots to preserve its vivid colour and refreshing hibiscus-like acidity for hot or cold infusions.",
+    notes: ["Bright tartness", "Ruby infusion", "Fruit-forward", "Caffeine free"],
+    trace: {
+      batch: "KBK-TEA-RSL",
+      village: "Northeast India producer network",
+      harvest: "Seasonal lot",
+      process: "Handpicked and naturally dried",
+      certification: "Smallholder sourced"
+    }
+  },
+  {
+    slug: "blue-pea-tea",
+    name: "Blue Pea Tea",
+    category: "Tea",
+    price: null,
+    image:
+      "https://res.cloudinary.com/dmot064z/image/upload/f_auto,q_auto:good/v1785917306/Blue_Pea_tea_naqngi.jpg",
+    origin: "Northeast India smallholder gardens",
+    summary: "Whole butterfly-pea flowers yielding a luminous blue, delicately earthy infusion.",
+    story:
+      "The blossoms are gathered and gently dried to retain their natural colour, creating an elegant caffeine-free infusion that shifts tone when paired with citrus.",
+    notes: ["Luminous blue", "Delicate floral", "Caffeine free", "Citrus responsive"],
+    trace: {
+      batch: "KBK-TEA-BPT",
+      village: "Northeast India producer network",
+      harvest: "Seasonal lot",
+      process: "Handpicked and shade-dried",
+      certification: "Smallholder sourced"
     }
   },
   {
@@ -270,7 +317,8 @@ export const products: Product[] = [
     name: "Nadia Ginger",
     category: "Spices",
     price: null,
-    image: "/images/spices.png",
+    image:
+      "https://res.cloudinary.com/dmot064z/image/upload/f_auto,q_auto:good/v1785917308/Nadia_Ginger_nizwqz.jpg",
     origin: "Garo Hills and Ri-Bhoi, Meghalaya",
     summary: "A low-fibre ginger variety with bright heat, clean aroma, and strong culinary versatility.",
     story: "Raised across Meghalaya's humid hill gardens, Nadia ginger is valued for its low fibre and suitability for fresh use, drying, powders, and extracts.",
@@ -282,7 +330,8 @@ export const products: Product[] = [
     name: "Sohmarit Black Pepper",
     category: "Spices",
     price: null,
-    image: "/images/spices.png",
+    image:
+      "https://res.cloudinary.com/dmot064z/image/upload/f_jpg,q_auto:good/v1785917307/Sohmarit_Black_pepper_czxqsx.heic",
     origin: "Meghalaya forest gardens",
     summary: "Forest-grown black pepper with layered warmth, fragrant lift, and a lingering piperine finish.",
     story: "Known locally as Soh Marit Khlaw, the vines climb within mixed forest gardens and pair beautifully with Lakadong turmeric in culinary blends.",
@@ -306,7 +355,8 @@ export const products: Product[] = [
     name: "Indian Bay Leaf — Meghalaya",
     category: "Spices",
     price: null,
-    image: "/images/spices.png",
+    image:
+      "https://res.cloudinary.com/dmot064z/image/upload/f_auto,q_auto:good/v1785917308/Indian_bay_leaf_-Meghalaya_em6wvi.jpg",
     origin: "Meghalaya forest belts",
     summary: "A forest aromatic with cinnamon-like sweetness and a softly peppered, earthy finish.",
     story: "Cinnamomum tamala leaves are gathered and dried as a fragrant pantry staple for rice, curries, stews, tea, and essential-oil applications.",
@@ -318,7 +368,8 @@ export const products: Product[] = [
     name: "Black Ginger",
     category: "Spices",
     price: null,
-    image: "/images/spices.png",
+    image:
+      "https://res.cloudinary.com/dmot064z/image/upload/f_auto,q_auto:good/v1785917306/black_ginger_pm2con.jpg",
     origin: "Meghalaya hill gardens",
     summary: "A rare premium rhizome offered in dried slices and powder for specialty wellness applications.",
     story: "Kaempferia parviflora is produced in limited quantities and carefully dried to preserve the deep colour and characteristic aromatic compounds of the rhizome.",
@@ -330,7 +381,8 @@ export const products: Product[] = [
     name: "Black Cardamom",
     category: "Spices",
     price: null,
-    image: "/images/spices.png",
+    image:
+      "https://res.cloudinary.com/dmot064z/image/upload/f_auto,q_auto:good/v1785917304/black_cardamom_angsor.jpg",
     origin: "High-altitude Meghalaya",
     summary: "Bold forest cardamom with smoky, camphorous, and menthol-rich aromatic depth.",
     story: "Grown within high-altitude agroforestry systems, black cardamom develops its powerful character through careful curing and traditional drying.",
@@ -342,7 +394,8 @@ export const products: Product[] = [
     name: "Meghalaya Cinnamon",
     category: "Spices",
     price: null,
-    image: "/images/spices.png",
+    image:
+      "https://res.cloudinary.com/dmot064z/image/upload/f_auto,q_auto:good/v1785917308/Meghalaya_Cinnamon_kc1scx.jpg",
     origin: "Meghalaya semi-wild forest trees",
     summary: "Warm, sweet-spicy cinnamon bark from semi-wild trees, available as chips or quills.",
     story: "Harvested from forest-linked trees and dried in small batches, this aromatic bark brings gentle sweetness and rounded warmth to food and beverages.",
@@ -354,7 +407,8 @@ export const products: Product[] = [
     name: "Raja Mircha — Naga King Chilli",
     category: "Spices",
     price: null,
-    image: "/images/spices.png",
+    image:
+      "https://res.cloudinary.com/dmot064z/image/upload/f_auto,q_auto:good/v1785917305/Raja_Mirchi_byqpaj.jpg",
     origin: "Nagaland",
     summary: "Nagaland's celebrated GI-tagged chilli, intensely hot, fruity, and deeply aromatic.",
     story: "Also known as Bhut Jolokia, Raja Mircha is cultivated in Naga kitchen gardens and fields, then offered fresh, dried, powdered, or as flakes.",
@@ -366,7 +420,8 @@ export const products: Product[] = [
     name: "Nagaland Ginger",
     category: "Spices",
     price: null,
-    image: "/images/spices.png",
+    image:
+      "https://res.cloudinary.com/dmot064z/image/upload/f_auto,q_auto:good/v1785917309/Nagaland_Ginger_clc8r2.jpg",
     origin: "Nagaland hill farms",
     summary: "An assertive local ginger with deep citrus heat and stronger character than common commercial varieties.",
     story: "Regular, blue, and black local strains are cultivated in mixed hill farms and remain central to Naga cooking, preservation, and seasonal trade.",
@@ -378,7 +433,8 @@ export const products: Product[] = [
     name: "Nagaland Turmeric",
     category: "Spices",
     price: null,
-    image: "/images/spices.png",
+    image:
+      "https://res.cloudinary.com/dmot064z/image/upload/f_auto,q_auto:good/v1785917305/Nagaland_Turmeric_icxvsy.jpg",
     origin: "Nagaland hill farms",
     summary: "A richly coloured hill turmeric grown with organic manure and traditional low-input methods.",
     story: "One of Nagaland's most important spices, the rhizomes are tended in mixed plots, cured after harvest, and prepared for regional and export markets.",
@@ -390,7 +446,8 @@ export const products: Product[] = [
     name: "Nagaland Sichuan Peppercorn",
     category: "Spices",
     price: null,
-    image: "/images/spices.png",
+    image:
+      "https://res.cloudinary.com/dmot064z/image/upload/f_auto,q_auto:good/v1785917305/Nagaland_Sichuan_peppercorn_f1dmme.jpg",
     origin: "Eastern Nagaland",
     summary: "Prickly-ash husks with an electric numbing sensation and bright citrus-earth complexity.",
     story: "Known locally as Makat or Timur, the pink-red husks are gathered from family plots, dried, and separated from the inner seed for spice blends and oils.",
@@ -414,7 +471,8 @@ export const products: Product[] = [
     name: "Naga Black Sesame",
     category: "Spices",
     price: null,
-    image: "/images/spices.png",
+    image:
+      "https://res.cloudinary.com/dmot064z/image/upload/f_auto,q_auto:good/v1785917309/Naga_Black_sesame_s2udmw.jpg",
     origin: "Eastern Nagaland",
     summary: "An indigenous black sesame strain with rich nuttiness and a deep, roasted finish.",
     story: "Used for oil, powder, tea, and the Chang Naga dish Naam Shik, this seed remains one of Eastern Nagaland's defining pantry ingredients.",
@@ -481,7 +539,8 @@ export const products: Product[] = [
     name: "The Origin Gift Hamper",
     category: "Gifting",
     price: 2490,
-    image: "/images/kaobak-hero.png",
+    image:
+      "https://res.cloudinary.com/dmot064z/image/upload/f_auto,q_auto:good/v1785917309/The_origin_gift_hamper_h0hhok.png",
     origin: "Northeast India curation",
     summary: "Coffee, honey, spices, tasting cards, and traceability notes.",
     story:
@@ -500,7 +559,8 @@ export const products: Product[] = [
     name: "Export Spice Selection",
     category: "Export",
     price: 4200,
-    image: "/images/spices.png",
+    image:
+      "https://res.cloudinary.com/dmot064z/image/upload/f_auto,q_auto:good/v1785917307/export_spice_selection_uh3owh.jpg",
     origin: "Nagaland, Assam, Meghalaya",
     summary: "Wholesale-ready spice lots for retailers, hotels, and export buyers.",
     story:

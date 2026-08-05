@@ -8,6 +8,7 @@ import { cn } from "@/lib/utils";
 export function ProductCard({ product, compact = false }: { product: Product; compact?: boolean }) {
   const accent = {
     Coffee: "border-t-[#6b4226]",
+    Tea: "border-t-[#486b4d]",
     Honey: "border-t-[#c9881c]",
     Spices: "border-t-[#6e7c3f]",
     Gifting: "border-t-[#c9762e]",

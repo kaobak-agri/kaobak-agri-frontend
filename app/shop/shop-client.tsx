@@ -10,7 +10,7 @@ import { Input } from "@/components/ui/input";
 import { products } from "@/lib/data";
 import { cn } from "@/lib/utils";
 
-const categories = ["All", "Coffee", "Honey", "Spices", "Gifting", "Export"];
+const categories = ["All", "Coffee", "Tea", "Honey", "Spices", "Gifting", "Export"];
 
 export function ShopClient() {
   const params = useSearchParams();
